@@ -1,0 +1,917 @@
+/* ========================================
+   BIOPLASTIK WEBSITE
+   COMPLETE CSS
+======================================== */
+
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f4ed;
+    color: #17351f;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ========================================
+   SIDEBAR
+======================================== */
+
+header {
+    width: 240px;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    padding: 40px 30px;
+
+    background: #f5f4ed;
+    border-right: 1px solid #dfe4d8;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #17351f;
+
+    margin-bottom: 70px;
+}
+
+.logo span {
+    color: #4d8758;
+}
+
+
+/* MENU */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+nav a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #405247;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #4d8758;
+    transform: translateX(5px);
+}
+
+
+/* BUTTON SIDEBAR */
+
+.nav-button {
+    margin-top: auto;
+
+    background: #17351f;
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: #4d8758;
+}
+
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+section,
+footer {
+    margin-left: 240px;
+}
+
+
+/* ========================================
+   GENERAL SECTION
+======================================== */
+
+section {
+    padding: 100px 7%;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #5f8b65;
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 70px 7%;
+
+    background: #e1eadc;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: clamp(50px, 6vw, 85px);
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #5c8b62;
+}
+
+.hero-description {
+    max-width: 560px;
+
+    font-size: 18px;
+
+    color: #526157;
+
+    margin-bottom: 35px;
+}
+
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.primary-button {
+    background: #17351f;
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary-button:hover {
+    background: #4d8758;
+}
+
+.secondary-button {
+    padding: 15px 10px;
+
+    font-weight: bold;
+
+    color: #315b3a;
+}
+
+
+/* ========================================
+   HERO VISUAL
+======================================== */
+
+.hero-visual {
+    width: 400px;
+    height: 400px;
+
+    position: relative;
+
+    flex-shrink: 0;
+}
+
+.circle {
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    border-radius: 50%;
+
+    background: #b8cdae;
+
+    top: 10px;
+    right: 0;
+}
+
+.hero-card {
+    position: absolute;
+
+    width: 210px;
+    height: 240px;
+
+    background: #f5f4ed;
+
+    border-radius: 20px;
+
+    right: 80px;
+    top: 80px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 0 20px 50px rgba(23, 53, 31, 0.15);
+}
+
+.hero-card span {
+    font-size: 13px;
+    letter-spacing: 2px;
+
+    color: #5c8b62;
+}
+
+.hero-card strong {
+    font-size: 70px;
+    line-height: 1;
+
+    margin: 10px 0;
+}
+
+.hero-card small {
+    color: #68766c;
+}
+
+
+/* ========================================
+   INTRODUCTION
+======================================== */
+
+.intro {
+    max-width: 900px;
+
+    margin-left: 240px;
+
+    text-align: center;
+}
+
+.intro h2 {
+    margin-bottom: 25px;
+}
+
+.intro > p:last-child {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #667268;
+
+    font-size: 18px;
+}
+
+
+/* ========================================
+   SECTION HEADING
+======================================== */
+
+.section-heading {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: end;
+
+    gap: 50px;
+
+    margin-bottom: 55px;
+}
+
+.section-heading > div {
+    max-width: 600px;
+}
+
+.section-heading > p {
+    max-width: 400px;
+
+    color: #667268;
+}
+
+
+/* ========================================
+   INGREDIENT CARDS
+======================================== */
+
+.card-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    min-height: 270px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(23, 53, 31, 0.1);
+}
+
+.card-number {
+    color: #7da181;
+
+    font-weight: bold;
+
+    margin-bottom: 60px;
+}
+
+.card h3 {
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #68766c;
+}
+
+
+/* ========================================
+   PRODUCTS
+======================================== */
+
+.products-section {
+    background: #17351f;
+
+    color: white;
+}
+
+.products-section .eyebrow {
+    color: #a6c8a9;
+}
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.product-card {
+    background: #f5f4ed;
+
+    color: #17351f;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.product-image {
+    height: 240px;
+
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    padding: 20px;
+}
+
+.product-image span {
+    background: white;
+
+    padding: 8px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.product-one .product-image {
+    background: #cbd9bd;
+}
+
+.product-two .product-image {
+    background: #d9cfae;
+}
+
+.product-three .product-image {
+    background: #b8cdae;
+}
+
+.product-info {
+    padding: 30px;
+}
+
+.product-info > p:first-child {
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    color: #719075;
+
+    font-weight: bold;
+}
+
+.product-info h3 {
+    font-size: 30px;
+
+    margin: 8px 0;
+}
+
+.product-info p {
+    color: #667268;
+
+    margin-bottom: 20px;
+}
+
+.product-info a {
+    font-weight: bold;
+
+    color: #315b3a;
+}
+
+
+/* ========================================
+   PRODUCTION PROCESS
+======================================== */
+
+.process-section {
+    text-align: center;
+}
+
+.process-section > h2 {
+    margin-bottom: 60px;
+}
+
+.process-list {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    text-align: left;
+}
+
+.process-list div {
+    border-top: 1px solid #b8c5b6;
+
+    padding-top: 20px;
+}
+
+.process-list span {
+    color: #719075;
+
+    font-weight: bold;
+}
+
+.process-list h3 {
+    margin: 30px 0 8px;
+}
+
+.process-list p {
+    color: #68766c;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    padding: 50px 7%;
+
+    background: #102718;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: end;
+}
+
+footer .logo {
+    color: white;
+
+    margin-bottom: 0;
+}
+
+footer p {
+    color: #a8b6aa;
+
+    margin-top: 10px;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1100px) {
+
+    .hero {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .hero-visual {
+        align-self: center;
+    }
+
+    .card-container,
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .process-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+
+        position: relative;
+
+        padding: 20px;
+
+        flex-direction: row;
+
+        align-items: center;
+
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .nav-button {
+        margin-top: 0;
+    }
+
+    section,
+    footer,
+    .intro {
+        margin-left: 0;
+    }
+
+    section {
+        padding: 70px 6%;
+    }
+
+    .hero {
+        min-height: auto;
+
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .hero-visual {
+        width: 300px;
+        height: 300px;
+    }
+
+    .circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .hero-card {
+        width: 180px;
+        height: 210px;
+
+        right: 35px;
+        top: 50px;
+    }
+
+    .hero-card strong {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    .section-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .card-container,
+    .product-grid,
+    .process-list {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 30px;
+    }
+}
+
+
+/* ========================================
+   SMALL PHONE
+======================================== */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero-visual {
+        width: 260px;
+        height: 260px;
+    }
+
+    .circle {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-card {
+        right: 25px;
+    }
+}/* =========================================
+   BIONAS - KEY ADVANTAGES
+========================================= */
+
+.advantages {
+    padding: 120px 8%;
+    background: #f3f4eb;
+    overflow: hidden;
+}
+
+.advantages-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.advantages-header h2 {
+    max-width: 700px;
+    margin: 0;
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: 1;
+    letter-spacing: -2px;
+    color: #173d32;
+}
+
+.advantages-header h2 span {
+    color: #6c876e;
+}
+
+.advantages-intro {
+    max-width: 390px;
+    margin: 0;
+    color: #6b766f;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.advantages-content {
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 1.2fr) 1fr;
+    gap: 55px;
+    max-width: 1250px;
+    margin: auto;
+    align-items: center;
+}
+
+.advantage-column {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.advantage-item {
+    position: relative;
+    padding-top: 5px;
+}
+
+.advantage-number {
+    display: block;
+    margin-bottom: 20px;
+    color: #829582;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.advantage-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border-radius: 50%;
+    background: #dce6cf;
+    color: #315a49;
+    font-size: 25px;
+}
+
+.advantage-item h3 {
+    margin: 0 0 12px;
+    color: #193d32;
+    font-size: 23px;
+    line-height: 1.2;
+}
+
+.advantage-item p {
+    max-width: 290px;
+    margin: 0;
+    color: #69766f;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.advantage-image {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-placeholder {
+    width: 100%;
+    max-width: 430px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 220px 220px 30px 30px;
+    background: linear-gradient(145deg, #dbe5cc, #b9cdb6);
+    color: #52705d;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.advantage-image img {
+    width: 100%;
+    max-width: 480px;
+    height: 500px;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 950px) {
+    .advantages {
+        padding: 90px 6%;
+    }
+
+    .advantages-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .advantages-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .advantage-image {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .advantages {
+        padding: 70px 6%;
+    }
+
+    .advantages-header h2 {
+        font-size: 42px;
+    }
+
+    .advantages-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .advantage-image {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: 350px;
+    }
+
+    .image-placeholder {
+        height: 380px;
+    }
+}
